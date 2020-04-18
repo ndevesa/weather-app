@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App | Nicolás Devesa 2020</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+    <body>
+        <section id="main">
+            <h1 class="error"></h1>
+            <div class="col">
+                <h4>Ubicación</h4>
+                <h2 id="pais"></h2>
+                <h2 id="ciudad"></h2>
+            </div>
+            <div class="col">
+                <h4>Temperatura actual</h4>
+                <h2 id="temperatura"> </h2>
+                <h2>S.T. <span id="sensacion_termica"></span></h2>
+            </div>
+            <div class="col">
+                <h4>Humedad</h4>
+                <h2 id="humedad"></h2>
+                <h2 id="presion"></h2>
+            </div>
+            <div id="loader" style="display:none;">Cargando :)</div>
+        </section>
+        <style>
+            /*The CSS its too small and simple to put it on a external file*/
+            body{font-family: 'Quicksand', sans-serif;background-image: url('https://images.unsplash.com/photo-1552249271-2f257ec421e7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80');background-position: center;background-repeat: no-repeat;background-size: cover;min-height: 100vh;}
+            #main{display:flex;flex-direction:row;justify-content:center;position:absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);}
+            .col{color:#fff;text-align: center;width:200px;margin:0px 20px;}
+            .col h2{font-weight: 500;margin: 0px;}
+            .col h4{margin-top: 0px;}
+            @media (max-width: 480px){.col{margin:0px;}}
+        </style>
+        <script src="script.js"></script>
+    </body>
+</html>
